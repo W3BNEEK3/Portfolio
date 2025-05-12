@@ -17,3 +17,33 @@ fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
   .catch(err => {
     projectList.innerHTML = "<p>Failed to load projects. Please visit my GitHub directly.</p>";
   });
+// Typing animation for the h1
+const typedText = document.getElementById('typed-text');
+const messages = ["Welcome", "My name is Seiyefa Amos Clever"];
+let messageIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const currentText = messages[messageIndex];
+  typedText.textContent = currentText.substring(0, charIndex);
+
+  if (!isDeleting && charIndex < currentText.length) {
+    charIndex++;
+    setTimeout(type, 100);
+  } else if (isDeleting && charIndex > 0) {
+    charIndex--;
+    setTimeout(type, 50);
+  } else {
+    if (!isDeleting) {
+      isDeleting = true;
+      setTimeout(type, 1200); // Pause before deleting
+    } else {
+      isDeleting = false;
+      messageIndex = (messageIndex + 1) % messages.length;
+      setTimeout(type, 500);
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", type);
