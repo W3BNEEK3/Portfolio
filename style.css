@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --primary-bg: #c4c2c2;
-  --text-color: #2c3e50;
+  --primary-bg: #3b3e61;
+  --text-color: #ffffff;
   --accent-indigo: #5c6bc0;
   --accent-mauve: #b39ddb;
   --accent-mustard: #fdd835;
@@ -74,7 +74,7 @@ section {
 
 h2 {
   font-size: 2.2rem;
-  color: var(--accent-indigo);
+  color: white;
   margin-bottom: 25px;
   position: relative;
   animation: fadeInDown 1s ease both;
@@ -136,8 +136,9 @@ h2::after {
   margin-bottom: 25px;
   padding: 15px;
   border-left: 4px solid var(--accent-mauve);
-  background-color: #f7f7f7;
+  background-color: #fcfcfc;
   border-radius: 6px;
+  color: rgb(85, 86, 92);
 }
 
 #contact a {
