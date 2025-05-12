@@ -173,3 +173,111 @@ footer {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+fieldset {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent-mustard);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1; /* For Firefox */
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+button[type="submit"] {
+  background-color: var(--accent-mustard);
+  color: var(--primary-bg);
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--accent-indigo);
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+form {
+  flex: 1 1 300px;
+}
+
+.socials {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials p,
+.social-icons a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.6rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--accent-mustard);
+}
+
+.socials i {
+  margin-right: 10px;
+}

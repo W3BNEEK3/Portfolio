@@ -19,7 +19,7 @@ fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
   });
 // Typing animation for the h1
 const typedText = document.getElementById('typed-text');
-const messages = ["Welcome", "My name is Seiyefa Amos Clever"];
+const messages = ["Welcome To My Portfolio", "My name is Seiyefa Amos Clever"];
 let messageIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
